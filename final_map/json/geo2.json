@@ -1,0 +1,384 @@
+{  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "url": "IMG_4115.JPG",
+        "date": "2018:06:04 09:34:07",
+        "make": "Apple",
+        "model": "iPhone 6 Plus",
+        "size": 2199611,
+        "type": "image/jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.72606666666667,
+          33.99691111111111,
+          73.26989619377163
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "url": "IMG_4115 2.JPG",
+        "date": "2018:06:04 09:34:07",
+        "make": "Apple",
+        "model": "iPhone 6 Plus",
+        "size": 2199611,
+        "type": "image/jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.72606666666667,
+          33.99691111111111,
+          73.26989619377163
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "url": "IMG_4120.JPG",
+        "date": "2018:06:04 10:04:02",
+        "make": "Apple",
+        "model": "iPhone 6 Plus",
+        "size": 2374296,
+        "type": "image/jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.72580833333333,
+          33.996772222222226,
+          59.969907407407405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "url": "IMG_4120 2.JPG",
+        "date": "2018:06:04 10:04:02",
+        "make": "Apple",
+        "model": "iPhone 6 Plus",
+        "size": 2374296,
+        "type": "image/jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.72580833333333,
+          33.996772222222226,
+          59.969907407407405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "url": "IMG_4092 2.JPG",
+        "date": "2018:06:03 12:30:17",
+        "make": "Apple",
+        "model": "iPhone 6 Plus",
+        "size": 2902084,
+        "type": "image/jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.66619166666668,
+          33.984519444444445,
+          20.05859375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "url": "IMG_4092.JPG",
+        "date": "2018:06:03 12:30:17",
+        "make": "Apple",
+        "model": "iPhone 6 Plus",
+        "size": 2902084,
+        "type": "image/jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.66619166666668,
+          33.984519444444445,
+          20.05859375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "url": "IMG_4092 3.JPG",
+        "date": "2018:06:03 12:30:17",
+        "make": "Apple",
+        "model": "iPhone 6 Plus",
+        "size": 2902084,
+        "type": "image/jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.66619166666668,
+          33.984519444444445,
+          20.05859375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "url": "IMG_4092 4.JPG",
+        "date": "2018:06:03 12:30:17",
+        "make": "Apple",
+        "model": "iPhone 6 Plus",
+        "size": 2902084,
+        "type": "image/jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.66619166666668,
+          33.984519444444445,
+          20.05859375
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "url": "IMG_4113 2.JPG",
+        "date": "2018:06:04 09:34:01",
+        "make": "Apple",
+        "model": "iPhone 6 Plus",
+        "size": 3208878,
+        "type": "image/jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.72595277777778,
+          33.996941666666665,
+          69.51940850277265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "url": "IMG_4113.JPG",
+        "date": "2018:06:04 09:34:01",
+        "make": "Apple",
+        "model": "iPhone 6 Plus",
+        "size": 3208878,
+        "type": "image/jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.72595277777778,
+          33.996941666666665,
+          69.51940850277265
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "url": "IMG_4095.JPG",
+        "date": "2018:06:03 12:30:23",
+        "make": "Apple",
+        "model": "iPhone 6 Plus",
+        "size": 3482410,
+        "type": "image/jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.66619166666668,
+          33.984519444444445,
+          19.957792207792206
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "url": "IMG_4095 4.JPG",
+        "date": "2018:06:03 12:30:23",
+        "make": "Apple",
+        "model": "iPhone 6 Plus",
+        "size": 3482410,
+        "type": "image/jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.66619166666668,
+          33.984519444444445,
+          19.957792207792206
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "url": "IMG_4095 3.JPG",
+        "date": "2018:06:03 12:30:23",
+        "make": "Apple",
+        "model": "iPhone 6 Plus",
+        "size": 3482410,
+        "type": "image/jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.66619166666668,
+          33.984519444444445,
+          19.957792207792206
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "url": "IMG_4095 2.JPG",
+        "date": "2018:06:03 12:30:23",
+        "make": "Apple",
+        "model": "iPhone 6 Plus",
+        "size": 3482410,
+        "type": "image/jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.66619166666668,
+          33.984519444444445,
+          19.957792207792206
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "url": "IMG_4131.JPG",
+        "date": "2018:06:04 10:07:30",
+        "make": "Apple",
+        "model": "iPhone 6 Plus",
+        "size": 3610493,
+        "type": "image/jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.72300833333334,
+          33.99636111111111,
+          58.89764419171405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "url": "IMG_4098.JPG",
+        "date": "2018:06:03 13:01:44",
+        "make": "Apple",
+        "model": "iPhone 6 Plus",
+        "size": 4119631,
+        "type": "image/jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.71127222222222,
+          33.994391666666665,
+          47.67016806722689
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "url": "IMG_4098 3.JPG",
+        "date": "2018:06:03 13:01:44",
+        "make": "Apple",
+        "model": "iPhone 6 Plus",
+        "size": 4119631,
+        "type": "image/jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.71127222222222,
+          33.994391666666665,
+          47.67016806722689
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "url": "IMG_4098 2.JPG",
+        "date": "2018:06:03 13:01:44",
+        "make": "Apple",
+        "model": "iPhone 6 Plus",
+        "size": 4119631,
+        "type": "image/jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.71127222222222,
+          33.994391666666665,
+          47.67016806722689
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "url": "IMG_4125.JPG",
+        "date": "2018:06:04 10:05:53",
+        "make": "Apple",
+        "model": "iPhone 6 Plus",
+        "size": 4177601,
+        "type": "image/jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.72430555555556,
+          33.99653888888889,
+          49.48993288590604
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "url": "IMG_4133.JPG",
+        "date": "2018:06:04 10:09:14",
+        "make": "Apple",
+        "model": "iPhone 6 Plus",
+        "size": 4584531,
+        "type": "image/jpeg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -119.72126666666666,
+          33.99590277777778,
+          62.006472491909385
+        ]
+      }
+    }
+  ]
+}

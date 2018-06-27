@@ -1,0 +1,154 @@
+body,html{
+  margin:0 auto;
+  padding:0 auto;
+  font-family:sans-serif;
+  line-height: 0.8em;
+}
+h1{
+  color:rgb(57, 219, 146);
+}
+h1:hover{
+  color:white;
+  margin-left:150px;
+  transition:all 0.5s;
+}
+
+.wrapper{
+  background:white;
+}
+ul{
+  margin:0;
+  -webkit-margin-before: 0em;
+  -webkit-padding-start: 0px;
+}
+.header{
+  background:white;
+  border-bottom:1px solid rgb(57, 219, 146);
+  margin-bottom:15px;
+  padding:15px;
+  width:100%;
+  margin:0px;
+  color:black;
+  align-items: center;
+}
+.profile-image{
+  display:none;
+  position:absolute;
+  z-index: 3;
+  margin-left:30%;
+  margin-right:0%;
+  margin-top:30px;
+  border-radius:20px;
+  width:550px;
+}
+
+.bg-image{
+  position:absolute;
+  z-index:0;
+  margin-left:0%;
+  margin-right:0%;
+  margin-top:0px;
+  border-radius:0px;
+  width:100%;
+}
+
+
+.nav{
+  margin:0px;
+}
+.navbar-nav{
+  list-style: none;
+}
+.nav-link{
+  text-decoration: none;
+  /* color:white;
+}
+.nav-item{ */
+  color:white;
+  padding:10px;
+  background:rgb(57, 219, 146);
+  opacity:0.7;
+  transition:all 0.5s;
+  border-radius:0px 25px 25px 0px;
+  width:300px;
+  display:block;
+}
+
+.nav-link:hover{
+  background:rgb(32, 114, 140);
+  width:100%;
+/* }
+
+.nav-link:hover{ */
+  color: orange;
+}
+
+.main{
+  border-top:1px solid rgb(57, 219, 146);
+  background: white;
+  padding:50px;
+}
+
+.bio{
+  background:white;
+  border:1px solid lightblue;
+  border-top:4px solid gray;
+  border-radius:5px;
+  padding:30px;
+}
+
+.bio:hover{
+  border-top:4px solid orange;
+}
+/*  */
+
+
+
+
+/*  */
+
+
+
+/*  */
+
+.row{
+  display:flex;
+}
+
+/*  */
+
+.cards{
+  height:300px;
+  padding: 20px;
+  z-index: 0;
+  display:none;
+}
+
+.cards1{
+  display:none;
+  position:absolute;
+  z-index: 3;
+  margin-left:30%;
+  margin-right:0%;
+  margin-top:30px;
+  border-radius:50px;
+  padding:8px;
+  width:500px;
+  box-shadow: 0 9px 30px -6px black;
+}
+
+.backs{
+  height:300px;
+  padding: 0px;
+  margin:10px;
+  box-shadow: 0 9px 30px -6px red;
+  border-radius: 250px;
+  z-index: 0;
+}
+
+.backs:hover{
+  -webkit-filter: invert(.8);
+  filter: invert(.8);
+  margin-top:5px;
+  transition:all 0.3s;
+}

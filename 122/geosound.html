@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head><title>Geofence Text</title>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="apple-touch-icon" sizes="120x120" href="ICON_iphone_retina.png" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no">
+
+<!-- stylesheet --> 
+<style> 
+body {
+padding: 0; margin: 0;
+background-color: rgb(100,150,0);
+} 
+#mytext{
+	position: absolute;
+	top:20%;
+	left:20%;
+	font-size: 50px;
+	font-family: helvetica;
+	color: rgb(255,255,255);
+}
+
+#mydata{
+	position: absolute;
+	bottom:10px;
+	left:10px;
+	font-size: 25px;
+	font-family: helvetica;
+	color: rgb(200,200,200);
+}
+</style>
+       
+<script language="javascript" type="text/javascript" src="https://class.arts.ucsb.edu/~art122/includes/p5/p5.js"></script>
+<script language="javascript"  src="p5/addons/p5.geolocation.js"></script>
+<!-- additional addons-->
+<script language="javascript" type="text/javascript" src="p5/p5.js"></script>
+<script language="javascript" src="p5/addons/p5.dom.js"></script>
+<script language="javascript" src="p5/addons/p5.sound.js"></script>   
+       
+<script>
+	var fence1,myt, myd
+	geooptions = {
+		enableHighAccuracy: true,
+		timeout: 5000,
+		maximumAge: 0
+	};
+    
+	function setup() {
+		watchPosition(positionChanged,geooptions)
+		myt=document.getElementById('mytext')
+		myd=document.getElementById('mydata')
+		myt.innerHTML="Loading ..."	
+		fence1 = new geoFenceCircle(34.412201, -119.850710, 10.01,'km',geooptions) 
+        soundFormats('mp3', 'ogg');
+        song = loadSound("door.mp3", loaded);
+        song.setVolume(0.5);
+	}
+
+	function positionChanged(position){
+		var current_latitude=position.latitude
+		var current_latitude_shorter=current_latitude.toFixed(7)
+		var current_longitude=position.longitude
+		var current_longitude_shorter=current_longitude.toFixed(7)
+		
+        
+		if(fence1.insideFence){
+	myd.innerHTML=current_latitude_shorter + ", " + current_longitude_shorter 
+			myt.innerHTML="You are here."
+        if(song.isPlaying()); {}    
+            song.play();
+		}
+      
+		else{		myd.innerHTML=current_latitude_shorter + ", " + current_longitude_shorter
+			myt.innerHTML="Get closer."
+		}
+	}
+
+    
+    function loaded() {        
+        if(fence1.insideFence){  
+                song.play();
+            }
+        else{
+                song.pause(); 
+            }   
+    }
+</script>
+</head>
+<body>
+	<div id="mytext"></div>
+	<div id="mydata"></div>
+</body>
+</html>

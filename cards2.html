@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Lawrence Chen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style3.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32"/>
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<style>
+.header{
+  display:flex;
+}
+.name{
+  margin-left: 30px;
+}
+</style>
+<body>
+  <div class="wrapper">
+    <div class="header">
+      <a href="home.html" class="duck"><img src="duck.png"></a>
+      <h1 class="name"> LAWRENCE CHEN </h1>
+    </div>
+    <div>
+        <img class="profile-image" src="images/me2.jpg" alt="LC">
+    </div>
+
+  <section>
+    <div class="row">
+        <img class="cards1" src="png/8.png">
+        <img class="cards" src="png/2.png">
+        <img class="cards" src="png/3.png">
+        <img class="cards" src="png/4.png">
+      </div>
+    </div>
+
+    <!-- cardbacks -->
+    <div class="row">
+      <img class="backs animated flipInX" src="png/eyeball.png">
+      <img class="backs animated flipInX" src="png/eyeball.png">
+      <img class="backs animated flipInX" src="png/eyeball.png">
+      <img class="backs animated flipInX" src="png/eyeball.png">
+    </div>
+    <div class="row">
+      <img class="backs animated flipInX" src="png/eyeball.png">
+      <img class="backs animated flipInX" src="png/eyeball.png">
+      <img class="backs animated flipInX" src="png/eyeball.png">
+      <img class="backs animated flipInX" src="png/eyeball.png">
+    </div>
+    <div class="row">
+      <img class="backs animated flipInX" src="png/eyeball.png">
+      <img class="backs animated flipInX" src="png/eyeball.png">
+      <img class="backs animated flipInX" src="png/eyeball.png">
+      <img class="backs animated flipInX" src="png/eyeball.png">
+    </div>
+    <div class="row">
+      <img class="backs animated flipInX" src="png/eyeball.png">
+      <img class="backs animated flipInX" src="png/eyeball.png">
+      <img class="backs animated flipInX" src="png/eyeball.png">
+      <img class="backs animated flipInX" src="png/eyeball.png">
+    </div>
+
+  </section>
+  <script>
+    $(".backs").click(function(){
+      $(".cards1").toggle();
+    });
+
+  </script>
+</body>
+</html>

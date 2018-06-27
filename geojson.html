@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Data Layer: Cacti Time</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+      <script>
+
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 9,
+          center: {lat: 34.4133, lng: -119.8610},
+          mapTypeId: google.maps.MapTypeId.SATELLITE
+        });
+
+
+         map.data.loadGeoJson('Maps/photo.geojson');
+
+		//the style of each marker is set individually after calculating the color using the date/time it was collected. red is the first site, white the last.
+
+		map.data.setStyle(function(feature){
+
+			var iphonedate=feature.getProperty('date');
+
+			//changing the format of the date to a javascript friendly format and then to seconds since january 1970 so that the number can be turned into a color
+			var match = iphonedate.match(/^(\d+)\:(\d+)\:(\d+) (\d+)\:(\d+)\:(\d+)$/);
+			var jsdate = new Date(match[1], match[2] - 1, match[3], match[4], match[5], match[6]);
+			var seconds_num = Date.parse(jsdate);
+
+			//console.log(seconds_num.map(min_sec_in, max_sec_in, 0, 255));
+			var min_sec_in=1494787223000 //the seconds when the first coordinates was found, i used excel to sort the output i got in the console above
+			var max_sec_in=1494788642000 //the seconds when the last coordinates was found, i used excel to sort the output i got in the console above
+
+			//changing the range of numbers to 0-255
+			var c=Math.floor(seconds_num.map(min_sec_in, max_sec_in, 0, 255))
+
+			var color='rgb(255,'+c+','+c+')'
+			return {
+				icon: {
+				  path: google.maps.SymbolPath.CIRCLE,
+				  scale: 10,
+				  fillColor: color,
+				  fillOpacity: 0.5,
+				  strokeWeight: 0
+				}
+			}
+
+ 		});
+
+
+      }
+
+    //this is a javascript function that does create the same output as the 'map' function in p5
+ 	Number.prototype.map = function (in_min, in_max, out_min, out_max) {
+	  return (this - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+	}
+
+    </script>
+
+  </head>
+  <body onload="initMap()">
+    <div id="map"></div>
+  </body>
+</html>

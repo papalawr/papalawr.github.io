@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+          <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" sizes="120x120" href="ICON_iphone_retina.png" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="flex main">
+            <div class="logo"><img src="iconfinder-icon.svg" height=80px></div>
+            <div class="title">STARS TAROT</div>
+        </div>
+        <!-- Trigger/Open The Modal -->
+        <div id="myBtn" class="clarity_button">Unlock</div>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                    <!--<span class="close">&times;</span>-->
+                    <h2>CARD</h2>
+                    <div class="card-wrap card-10"></div> 
+            </div>
+        </div>
+        <script src="http://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script>
+            $(function () {
+                // When the user clicks the button, open the modal 
+                $("body").on("click", "#myBtn", function () {
+                    console.log("TEST");
+                    randomCardGen(); // GENERATE A RANDOM CARD AND SET IT AS BACKGROUND IMAGE
+                    $("#myModal").show();
+                    return false;
+                });
+                // When the user clicks anywhere outside of the modal, close it
+                $(window).on("click", function (event) {
+                    if (!$(event.target).parents(".modal").length) {
+                        $("#myModal").hide();
+                    }
+                });
+            });
+            var theImages = [{
+                src: "cards/2.png"
+            }, {
+                src: "cards/6.png"
+            }, {
+                src: "cards/11.png"
+            }, {
+                src: "cards/13.png"
+            }, {
+                src: "cards/3.png"
+            }, {
+                src: "cards/19.png" 
+            }, {
+                src: "cards/14.png"
+            }, {
+                src: "cards/31.png" 
+            }, {
+                src: "cards/10.png"    
+                
+            }];
+            var numberOfCard = theImages.length-1; // -1 as length is 3 but we have 0,1,2
+            function randomCardGen() {
+                var randomCard = theImages[getRandomInt(0,numberOfCard)];
+                $(".card-wrap").css({"background-image":'url('+randomCard.src+')'});
+            }
+            // create random image number
+            function getRandomInt(min, max) {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+        </script>
+    </body>
+</html>

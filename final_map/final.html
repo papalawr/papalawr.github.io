@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Santa Cruz Island</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="https://class.arts.ucsb.edu/~art122/s_18/chen_lawrence/favicon-32x32.png" sizes="32x32" />
+
+    <style>
+        #map {height: 100%;}
+        html, body {height: 100%;
+            margin: 0;
+            padding: 0;}
+    </style>
+
+</head>
+<body>
+<div id="map"></div>
+<script>
+    function initMap(){
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: 34.0240, lng: -119.7058},
+            zoom: 12,
+            styles: [
+                {
+                    "elementType": "labels",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "administrative",
+                    "elementType": "geometry",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "administrative.land_parcel",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "administrative.neighborhood",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "landscape",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "color": "#062c0b"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "poi",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "road",
+                    "elementType": "labels.icon",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "transit",
+                    "stylers": [
+                        {
+                            "visibility": "off"
+                        }
+                    ]
+                },
+                {
+                    "featureType": "water",
+                    "elementType": "geometry.fill",
+                    "stylers": [
+                        {
+                            "color": "#35af7e"
+                        }
+                    ]
+                }
+            ]})
+////////0//////00///////////////////////////// JSON map set 1
+        //
+        ////text
+
+        var myLatLng = {lat:  33.970975, lng: -119.80220555555555};
+        var markert = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            draggable: true,
+            title: 'text',
+            icon: 'photo/text.png'
+        });
+
+        /////11111/////////////////////Fennel//////////////////////////////
+                var myLatLng = {lat:  33.99791111111111, lng: -119.73606666666667};
+                var marker0 = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    draggable: true,
+                    title: 'fennel',
+                    icon: 'photo/phone.png'
+                });
+
+        ////////animation sequence///////////////////////////////////////////////
+        marker0.addListener('click', toggleBounce);
+///////////fxn///
+        marker0.setAnimation(google.maps.Animation.BOUNCE);
+
+
+                // adding an infowindow to the marker
+                 	var contentString0 = "<h1>Fennel</h1> Everywhere and invasive!! <br><br> <br>  <img src='photo/fennel.png' height='100'><br><br>";
+
+                 	var infowindow0 = new google.maps.InfoWindow({
+                   		 content: contentString0
+                   	});
+                    google.maps.event.addListener(marker0, 'click', function() {
+                    	// infowindow2.close();
+                		infowindow0.open(map,marker0);
+                  });
+
+         ////////////////////////////////////////////////////////////////////
+
+
+
+/////11111/////////////////////STATION//////////////////////////////
+        var myLatLng = {lat:  33.99691111111111, lng: -119.72606666666667};
+        var marker1 = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            draggable: true,
+            title: 'station',
+            icon: 'photo/phone.png'
+        });
+
+////////animation sequence///////////////////////////////////////////////
+marker1.addListener('click', toggleBounce);
+///////////fxn///
+marker1.setAnimation(google.maps.Animation.BOUNCE);
+
+
+        // adding an infowindow to the marker
+         	var contentString1 = "<h1>THE STATION</h1> This is the camp where we stayed at <br><br> <br>  <img src='photo/station.png' height='100'><br><br>";
+
+         	var infowindow1 = new google.maps.InfoWindow({
+           		 content: contentString1
+           	});
+            google.maps.event.addListener(marker1, 'click', function() {
+            	// infowindow2.close();
+        		infowindow1.open(map,marker1);
+          });
+
+ ////////////////////////////////////////////////////////////////////
+ //////222222//////////////////////TIGERLILY
+
+        var myLatLng = {lat:  34.00195277777778, lng: -119.71176944444444};
+        var marker2 = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            draggable: true,
+            title: 'tiger',
+            icon: 'photo/phone.png'
+        });
+
+        ////////animation sequence///////////////////////////////////////////////
+        marker2.addListener('click', toggleBounce);
+///////////fxn///
+        marker2.setAnimation(google.maps.Animation.BOUNCE);
+
+
+        var contentString2 = "<h1>Tigerlilies</h1> flowers <br><br> <br>  <img src='photo/tigerlily.png' height='100'><br><br>";
+
+        var infowindow2 = new google.maps.InfoWindow({
+             content: contentString2
+          });
+          google.maps.event.addListener(marker2, 'click', function() {
+            // infowindow2.close();
+          infowindow2.open(map,marker2);
+        });
+
+
+
+        /////////////TIGERLILY2-marker3//////////////////////
+        var myLatLng = {lat:  34.040075, lng: -119.80550555555555};
+        let marker3 = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            draggable: true,
+            title: 'tiger2',
+            icon: 'photo/fire.png'
+        });
+
+        ////////animation sequence///////////////////////////////////////////////
+                marker3.addListener('click', toggleBounce);
+        ///////////fxn///
+                function toggleBounce() {
+                if (marker3.getAnimation() !== null) {
+                 marker3.setAnimation(null);
+                } else {
+                 marker3.setAnimation(google.maps.Animation.BOUNCE);
+                }
+                }
+
+
+        // adding an infowindow to the marker
+        marker3.addListener('click', toggleBounce);
+///////////fxn///
+        marker3.setAnimation(google.maps.Animation.BOUNCE);
+
+
+
+        /////////////TIGERLILY3-marker4//////////////////////
+        var myLatLng = {lat:  33.99781388888889, lng: -119.7192};
+        marker4 = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            draggable: true,
+            title: 'tiger3',
+            icon: 'photo/phone.png'
+        });
+
+        ////////animation sequence///////////////////////////////////////////////
+        marker4.addListener('click', toggleBounce);
+///////////fxn///
+        marker4.setAnimation(google.maps.Animation.BOUNCE);
+
+
+
+        // adding an infowindow to the marker
+          var contentString4 = "<h1>Island Foxes</h1> They're wild!<br><br> <br>  <img src='photo/foxes.png' height='200'><br><br>";
+
+          var infowindow4 = new google.maps.InfoWindow({
+               content: contentString4
+            });
+            google.maps.event.addListener(marker4, 'click', function() {
+              // infowindow2.close();
+            infowindow4.open(map,marker4);
+          });
+
+
+
+/////////////PORT-marker 5//////////////////////
+        var myLatLng = {lat:  34.04991666666667, lng: -119.55586111111111};
+        marker5 = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            draggable: true,
+            title: 'truck',
+            icon: 'photo/phone.png'
+        });
+
+        ////////animation sequence///////////////////////////////////////////////
+        marker5.addListener('click', toggleBounce);
+///////////fxn///
+        marker5.setAnimation(google.maps.Animation.BOUNCE);
+
+
+
+        // adding an infowindow to the marker
+          var contentString5 = "<h1>STATION TRUCK</h1> the green retro one <br><br> <br>  <img src='photo/green_truck.png' height='200'><br><br>";
+
+          var infowindow5 = new google.maps.InfoWindow({
+               content: contentString5
+            });
+            google.maps.event.addListener(marker5, 'click', function() {
+              // infowindow2.close();
+            infowindow5.open(map,marker5);
+          });
+
+
+/////////////forest//////////////////////
+        var myLatLng = {lat:  33.998133333333335 , lng: -119.72602777777777};
+        marker6 = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            draggable: true,
+            title: 'forest',
+            icon: 'photo/phone.png'
+        });
+
+        ////////animation sequence///////////////////////////////////////////////
+        marker6.addListener('click', toggleBounce);
+///////////fxn///
+        marker6.setAnimation(google.maps.Animation.BOUNCE);
+
+
+
+        // adding an infowindow to the marker
+          var contentString6 = "<h1>EUCALYPTUS FOREST</h1> ghosts! <br><br> <br>  <img src='photo/ghostforest.png' height='400'><br><br>";
+
+          var infowindow6 = new google.maps.InfoWindow({
+               content: contentString6
+            });
+            google.maps.event.addListener(marker6, 'click', function() {
+              // infowindow2.close();
+            infowindow6.open(map,marker6);
+          });
+
+
+///////////WHALe//////////////////////
+        var myLatLng = {lat:  34.1149 , lng: -119.63231944444444};
+        marker7 = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            draggable: true,
+            title: 'whale',
+            icon: 'photo/phone.png'
+        });
+
+        ////////animation sequence///////////////////////////////////////////////
+        marker7.addListener('click', toggleBounce);
+///////////fxn///
+        marker7.setAnimation(google.maps.Animation.BOUNCE);
+
+
+
+        // adding an infowindow to the marker
+          var contentString7 = "<h1>WHALE</h1> Open Ocean Exhibit <br><br> <br>  <img src='photo/whale.png' height='100'><br><br>";
+
+          var infowindow7 = new google.maps.InfoWindow({
+               content: contentString7
+            });
+            google.maps.event.addListener(marker7, 'click', function() {
+              // infowindow2.close();
+            infowindow7.open(map,marker7);
+          });
+
+///////////Church//////////////////////
+        var myLatLng = {lat:  33.99590277777778 , lng: -119.72126666666666};
+        marker8 = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            draggable: true,
+            title: 'cross',
+            icon: 'photo/phone.png'
+        });
+
+        ////////animation sequence///////////////////////////////////////////////
+        marker8.addListener('click', toggleBounce);
+///////////fxn///
+        marker8.setAnimation(google.maps.Animation.BOUNCE);
+
+
+
+        // adding an infowindow to the marker
+          var contentString8 = "<h1>The Church</h1> Pray at the chapel! <br><br> <br>  <img src='photo/cross.png' height='100'><br><br>";
+
+          var infowindow8 = new google.maps.InfoWindow({
+               content: contentString8
+            });
+            google.maps.event.addListener(marker8, 'click', function() {
+              // infowindow2.close();
+            infowindow8.open(map,marker8);
+          });
+
+///////////white truck//////////////////////
+        var myLatLng = {lat: 33.997118, lng: -119.714043};
+        marker9 = new google.maps.Marker({
+            position: myLatLng,
+            map: map,
+            draggable: true,
+            title: 'toyotaa',
+            icon: 'photo/phone.png'
+        });
+
+        ////////animation sequence///////////////////////////////////////////////
+                marker9.addListener('click', toggleBounce);
+        ///////////fxn///
+                 marker9.setAnimation(google.maps.Animation.BOUNCE);
+
+
+
+
+        // adding an infowindow to the marker
+          var contentString9 = "<h1>Toyota Tacoma from early 2000s</h1>This was a good truck<br><br> <br>  <img src='photo/tacoma.png' height='200'><br><br>";
+
+          var infowindow9 = new google.maps.InfoWindow({
+               content: contentString9
+            });
+            google.maps.event.addListener(marker9, 'click', function() {
+              // infowindow2.close();
+            infowindow9.open(map,marker9);
+          });
+
+    }
+//=========================================================///
+
+//=========================================================== < = ; _ ; = > ==========================================//
+// //        polyline symbol
+//         var lineSymbol = {
+//             path: google.maps.SymbolPath.CIRCLE,
+//             scale: 8,
+//             strokeColor: 'white'
+//         };
+// //        polyline TPE->PHX
+//         var line = new google.maps.Polyline({
+//             path: [
+//                 {lat: 25.0330, lng: 121.5654}, //tpe
+//                 {lat: 21.291, lng: -157.821}, //hw
+//                 {lat: 34.0522, lng: -118.2437}, //la
+//                 {lat: 33.4484, lng: -112.0740}, //phx
+//                 {lat: -41.2865, lng: 174.7762}, //wellington
+//                 {lat: -35.4735, lng:149.0124},//canberra
+//                 {lat:49.2827,lng:-123.1207}, //van
+//                 {lat:-79.0827,lng:123.1207}, //ant
+//                 {lat:30.5595,lng:22.9375}, //sa
+//                 {lat: 25.0330, lng: 121.5654}, //tpe
+//
+//                 {lat: 25.0330, lng: -121.5654}, //tpe
+//                 {lat: 21.291, lng: 157.821}, //hw
+//                 {lat: 34.0522, lng: 118.2437}, //la
+//                 {lat: 33.4484, lng: 112.0740}, //phx
+//                 {lat: -41.2865, lng: -174.7762}, //wellington
+//                 {lat: -35.4735, lng: -149.0124},//canberra
+//                 {lat:49.2827,lng:123.1207}, //van
+//                 {lat:-79.0827,lng:-123.1207}, //ant
+//                 {lat:30.5595,lng:-22.9375}, //sa
+//                 {lat: 25.0330, lng: -121.5654},
+// //====//tpe
+//
+//                 {lat: -25.0330, lng: 121.5654}, //tpe
+//                 {lat: -21.291, lng: -157.821}, //hw
+//                 {lat: -34.0522, lng: -118.2437}, //la
+//                 {lat: -33.4484, lng: -112.0740}, //phx
+//                 {lat: 41.2865, lng: 174.7762}, //wellington
+//                 {lat: 35.4735, lng:149.0124},//canberra
+//                 {lat:-49.2827,lng:-123.1207}, //van
+//                 {lat:79.0827,lng:123.1207}, //ant
+//                 {lat:-30.5595,lng:22.9375}, //sa
+//                 {lat: -25.0330, lng: 121.5654}, //tpe
+//
+//                 {lat: -25.0330, lng: -121.5654}, //tpe
+//                 {lat: -21.291, lng: 157.821}, //hw
+//                 {lat: -34.0522, lng: 118.2437}, //la
+//                 {lat: -33.4484, lng: 112.0740}, //phx
+//                 {lat: 41.2865, lng: -174.7762}, //wellington
+//                 {lat: 35.4735, lng: -149.0124},//canberra
+//                 {lat:-49.2827,lng:123.1207}, //van
+//                 {lat:79.0827,lng:-123.1207}, //ant
+//                 {lat:-30.5595,lng:-22.9375}, //sa
+//                 {lat: -25.0330, lng: -121.5654}
+//             ],
+//
+// ////
+//
+//             strokeColor:'white',
+//             geodesic: true,
+//             icons: [{
+//                 icon: lineSymbol,
+//                 offset: '100%',
+//             }],
+//             map: map
+//         });
+//         animateCircle(line);
+// //        var flightPlanCoordinates = [
+// //          {lat: 25.0330, lng: 121.5654},
+// //          {lat: 21.291, lng: -157.821},
+// //          {lat: 34.0522, lng: -118.2437},
+// //          {lat: 33.4484, lng: -112.0740}
+// //        ];
+// //        var flightPath = new google.maps.Polyline({
+// //          path: flightPlanCoordinates,
+// //          geodesic: true,
+// //          strokeColor: '#FF0000',
+// //          strokeOpacity: 1.0,
+// //          strokeWeight: 2
+// //        });
+// //        flightPath.setMap(map);
+//         //
+//      Marker
+
+// //        marker.addListener('click', toggleBounce);
+// //
+// //        var myLatLng = {lat: 22.6273, lng: 120.3014};
+// //        var marker = new google.maps.Marker({
+// //            position: myLatLng,
+// //            map: map,
+// //            draggable: true,
+// //            animation: google.maps.Animation.DROP,
+// //            title: '85'
+// //    });
+// //        marker.addListener('click', toggleBounce);
+//     }
+//     function animateCircle(line) {
+//         var count = 0;
+//         window.setInterval(function() {
+//             count = (count + 1) % 200;
+//             var icons = line.get('icons');
+//             icons[0].offset = (count / 2) + '%';
+//             line.set('icons', icons);
+//         }, 20);
+//     }
+//     //    set animation
+//     function toggleBounce() {
+//         if (marker.getAnimation() !== null) {
+//             marker.setAnimation(null);
+//         } else {
+//             marker.setAnimation(google.maps.Animation.BOUNCE);
+//         }
+//     }
+
+    //    function drop() {
+    //        for (var i =0; i < markerArray.length; i++) {
+    //        setTimeout(function() {
+    //        addMarkerMethod();}, i * 200);}
+    //    }
+    //======================================================== < = O _ o = > ==============================================/
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJvHoq7GaxVKLboFOL70azt1pyLWfUnNo&callback=initMap"
+        async defer></script>
+<!--<script src="https://maps.googleapis.com/maps/api/js"></script>-->
+
+</body>
+</html>
