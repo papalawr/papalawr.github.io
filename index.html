@@ -1,94 +1,173 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Meta Tags for Bootstrap 4 -->
   <meta charset="utf-8">
-  <title>Lawrence Chen | Art122</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="normalize.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="57x57" href="fav.ico/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="fav.ico/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="fav.ico/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="fav.ico/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="fav.ico/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="fav.ico/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="fav.ico/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="fav.ico/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="fav.ico/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="fav.ico/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="fav.ico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="fav.ico/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="fav.ico/favicon-16x16.png">
+  <link rel="manifest" href="fav.ico/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <!-- Bootstrap 4 CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="stylesheet/less" type="text/css" href="styles.less" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.0.2/less.min.js"></script>
+  <title>Lawrence Chen | Front-End Web Developer & Graphic Designer</title>
 </head>
-<style>
-.header{
-  display:flex;
-}
-.name{
-  margin-left: 30px;
-}
-</style>
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<body>
-  <div class="wrapper">
-    <div class="header">
-      <div class="module-left">
-        <a href="home.html" class="duck"><img src="duck.png"></a>
-        <h1 class="name"> LAWRENCE CHEN </h1>
-      </div>
-      <div class="module-right">
-        <a href="http://class.arts.ucsb.edu/art22/Sites/w_17/hsin/site/index.html">art22</a>
-        <a href="http://foundation.arts.ucsb.edu/~art7d/w18/ochoca/Lawrence/home.html">art7d</a>
-      </div>
-    </div>
-    <div>
-        <img class="profile-image" src="images/me2.jpg" alt="LC">
-    </div>
-
-    <div>
-        <img class="bg-image" src="images/santacruz.png" alt="LC">
-    </div>
-
-    <div class="nav">
-      <ul class="">
-        <li class="nav-item">
-          <a class="nav-link" href="122/geosound.html">1. Geolocation Exercise</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="cards.html">2. Pokemon Project: Tarot</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="cards2.html">3. 'Invisible Mapping' Pokemon Project</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="TAROT2/index.html">4. Final Fix - Pokemon Project</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Maps/maps_1.0.html">5. Google Maps API </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Maps/maps_2.0.html">6. GM Visual Hacking --</a>
-        </li>    <!-- ERROR WHEN CLICKING ON MARKER -->
-        <li class="nav-item">
-          <a class="nav-link" href="Maps/maps_2.0.html">7. GM Visual Hacking --</a>
-        </li>    <!-- ERROR WHEN CLICKING ON MARKER -->
-        <li class="nav-item">
-          <a class="nav-link" href="Maps/maps_4.0.html">8. Google Maps Visual Hacking Project</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Maps/map_info_marker.html">9. Info Marker</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="geojson.html">10. GeoJson</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="reading.html">11. Reading</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="final_map/final.html">12. Santa Cruz Island Map</a>
-        </li>
-
-    </div>
-    <!-- <div class="main">
-      <div class="bio">
-        Background: I’m a graphic designer and illustrator here to make maps
-      </div> -->
-    <div>
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  <a class="navbar-brand" href="#">
+      <img src="vb.png" height="30px" alt="this is a graphic illustration of Lawrence Chen's crest which is a formosan black bear used as a logo">
+  </a>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Contact</a>
+      </li>
+    </ul>
   </div>
+</nav>
+<!--  -->
+<div class="jumbotron paral paralsec1 about">
+  <!-- The video -->
+  <video autoplay muted loop id="myVideo">
+      <source src="air.mp4" type="video/mp4">
+    </video>
+  <h1 class="green">
+        Hello!
+      </h1>
+  <p class="green">I'm Lawrence Chen</p>
+</div>
 
-  <script>
-$( ".name").click(function() {
-  $( ".profile-image" ).show( "slow" );
-});
-</script>
+<div class="articles">
+  <div class="col-sm-8">
+    <h2 class="blue">
+          About
+      </h2>
+    <a class="pp-link" href="#" alt="a picture of a man with a hat looking to the left, in the background is a lake and sky"><img src="art.jpg" class="profile-pic"></a>
+    <p class="about-text">
+      I'm a front-end web developer and graphic designer based in Santa Barbara. My hobbies include surfing, cycling, and making art. Catch me coding at a local coffee shop or out on the bike path at the university.
+    </p>
+    <h2 class="blue">
+          Skills
+      </h2>
+    <p class="about-text">
+      HTML, CSS, JavaScript, jQuery, LESS, GitHub/Git, PHP Adobe Illustrator, Adobe PhotoShop, Adobe InDesign, Adobe AfterEffects
+    </p>
+    <div class="article-border-bottom">
+    </div>
+  </div>
+</div>
+<!-- First Parallax Section -->
+<div class="jumbotron paral paralsec">
+</div>
 
+<div class="articles-2">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2 class="blue">
+          Showcase
+        </h2>
+      <p class="about-text">
+        Here's some of my work including a mock up I've built as well as my first published design work.
+        <div class="red-bot"></div>
+      </p>
+    </div>
+    <div class="col-sm-8">
+      <p class="about-text"> Calendario is a mock up site for schedule planning and
+      </p>
+      <p class="about-text">It is a site that I customized to fit my scheduling needs.</p>
+      <p class="about-text"> For the calendar section of this app, I utilized Kendo UI's clean calendar interface. </p>
+    </div>
+    <img src="cal.png" class="portfolio-item">
+    <div class="col-sm-8">
+      <p class="about-text">In October, I submitted to the contemporary arts mazagine at UCSB. This is my first printed publication, <em>Santa Cruz</em></p>
+    </div>
+    <img src="santacruz.png" class="portfolio-item">
+  </div>
+  <div class="red-bot"></div>
+</div>
+<!-- random  -->
+<!--
+<div class="random">
+  <div class="purp">
+    <p class="about-text">In October, I submitted to the contemporary arts mazagine at UCSB. This is my first printed publication, <em>Santa Cruz</em></p>
+  <img src="santacruz.png" class="portfolio-item-2">
+  </div>
+  <div class="skeet">
+    <p class="about-text">In October, I submitted to the contemporary arts mazagine at UCSB. This is my first printed publication, <em>Santa Cruz</em></p>
+    <img src="santacruz.png" class="portfolio-item-2">
+  </div>
+  <div class="blk">
+    <p class="about-text">In October, I submitted to the contemporary arts mazagine at UCSB. This is my first printed publication, <em>Santa Cruz</em></p>
+    <img src="santacruz.png" class="portfolio-item-2">
+  </div>
+</div> -->
+<!--  -->
+<div class="jumbotron paral about">
+  <div class="col">
+    <h2 class="blue">
+      Contact me
+    </h2>
+    <div class="contact">
+      <iframe width="400px" height="400px" frameborder="0" style="border:0" class="map" src="https://www.google.com/maps/embed/v1/place?q=UCSB+&key=AIzaSyDJvHoq7GaxVKLboFOL70azt1pyLWfUnNo" allowfullscreen></iframe>
+  <div class="col-sm-8">
+    <div class="container form">
+      <form action="action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+    <option value="usa">USA</option>
+    <option value="canada">Canada</option>
+    <option value="australia">Australia</option>
+  </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- Add More Parallax Sections Here -->
+
+<!-- Footer Section -->
+<footer class="wn-footer">
+  <img src="vb.png" height="100px">
+  <p>
+    copyright 2018
+  </p>
+</footer>
+<!-- Bootstrap 4 Scripts -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,118 +1,369 @@
-body,html{
+*, html, body{
+  margin: 0px 0px;
+}
+/* video */
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: absolute;
+  margin:0px auto;
+  z-index: -1;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+/* loader */
+
+.navbar-brand {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    margin-left: 10px;
+}
+
+/* Header Parallax Element Style*/
+
+.paral {
+  min-height: 600px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* Paragrapgh for Parallax Section */
+
+.paral p {
+    font-size: 30px;
+    color: #f5f5f5;
+    text-align: center;
+    line-height: 100px;
+}
+
+/* Heading for Parallax Section */
+
+.paral h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 60px;
+  text-align: center;
+  padding-top: 60px;
+  line-height: 100px;
+}
+
+/* Image for Parallax Section */
+
+.paralsec {
+  background-image: url("sb.jpg");
+  border-radius: 0;
+
+}
+/* https://img.webnots.com/2017/05/parallax.jpg */
+.paralsec1 {
+  background-image: url("");
+  border-radius: 0;
+  background:black;
+  height:500px;
+  width:100%;
+}
+/* https://img.webnots.com/2017/05/parallax1.jpg */
+
+.paralsec2 {
+  background:green;
+  height:500px;
+  width:100%;
+  border-radius: 0;
+
+}
+
+/*https://img.webnots.com/2015/11/parallax2.jpg  */
+
+/* Add more images for more sections */
+
+/* Remove Bottom Margin from Jumbotron */
+
+.jumbotron {
+  margin-bottom: 0;
+}
+
+/* col */
+.col-sm-8{
   margin:0 auto;
-  padding:0 auto;
-  font-family:sans-serif;
-  line-height: 0.8em;
+  margin-top:50px;
 }
 
 
-h1{
-  color:rgb(57, 219, 146);
-}
-h1:hover{
-  color:white;
-  margin-left:150px;
-  transition:all 0.5s;
-}
-
-.wrapper{
-  background:white;
-}
-ul{
-  margin:0;
-  -webkit-margin-before: 0em;
-  -webkit-padding-start: 0px;
-}
-
-.module-left{
-  display:flex;
-  align-items: center;
-}
-
-.module-right a{
-  text-decoration: none;
-  color: rgb(57, 219, 146);
-  padding:10px;
-  margin:5px 10px;
-}
-
-.header{
-  background:white;
-  border-bottom:1px solid rgb(57, 219, 146);
-  margin-bottom:15px;
-  padding:15px;
-  margin:0px;
-  color:black;
-  align-items: center;
-  display:flex;
-  justify-content: space-between;
-}
-.profile-image{
-  display:none;
-  position:absolute;
-  z-index: 3;
-  margin-left:30%;
-  margin-right:0%;
-  margin-top:30px;
-  border-radius:20px;
-  width:550px;
-}
-
-.bg-image{
-  position:absolute;
-  z-index:0;
-  margin-left:0%;
-  margin-right:0%;
-  margin-top:0px;
-  border-radius:0px;
-  width:100%;
+/* carousel - inner */
+.carousel-inner{
+  height:400px;
+  width:750px;
+  margin:0 auto;
+  border-radius:15px;
+  box-shadow: 0 9px 30px -6px gray;
 }
 
 
-.nav{
-  margin:0px;
-}
-.navbar-nav{
-  list-style: none;
-}
-.nav-link{
-  text-decoration: none;
-  /* color:white;
-}
-.nav-item{ */
-  color:white;
-  padding:10px;
-  background:rgb(57, 219, 146);
-  opacity:0.7;
-  transition:all 0.5s;
-  border-radius:0px 25px 25px 0px;
-  width:300px;
-  display:block;
+/* Footer */
+
+.wn-footer {
+  padding: 2.5rem 0;
+  text-align: center;
+  color: white;
+  background-color: #607D8B;
+  border-top: .05rem solid #e5e5e5;
 }
 
-.nav-link:hover{
-  background:rgb(32, 114, 140);
-  width:100%;
-/* }
-
-.nav-link:hover{ */
-  color: orange;
+.wn-footer a {
+  color: yellow;
 }
 
-.main{
-  border-top:1px solid rgb(57, 219, 146);
-  background: white;
-  padding:50px;
+.green {
+  color: white !important;
 }
 
-.bio{
-  background:white;
-  border:1px solid lightblue;
-  border-top:4px solid gray;
+/* rgb(85, 254, 137) */
+
+.blue{
+  color:tomato!important;
+}
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff3019+0,a50803+100 */
+background: #ff3019; /* Old browsers */
+background: -moz-linear-gradient(top, #ff3019 0%, #a50803 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ff3019 0%,#a50803 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ff3019 0%,#a50803 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#a50803',GradientType=0 ); /* IE6-9 */
+
+
+.green-bot {
+    color: rgb(85, 254, 137) !important;
+    border-bottom: 0px solid rgb(85, 254, 137) !important;
+    height: 0px;
+    border-radius: 5px 5px;
+    width: 88px;
+    border-top: 7px solid rgb(85, 254, 137) !important;
+    margin: 0 auto;
+}
+
+.red-bot {
+    color: rgb(85, 254, 137) !important;
+    border-bottom: 0px solid tomato !important;
+    height: 0px;
+    border-radius: 5px 5px;
+    width: 88px;
+    border-top: 7px solid tomato !important;
+    margin: 0 auto;
+    margin-top:30px;
+}
+
+
+
+.about {
+  background: #ffffff00;
+  padding: 100px 200px;
+}
+
+.about-text{
+  font-size:1.2em;
+}
+
+.works {
+  height: 50%;
+  margin-top: 150px;
+}
+
+.carousel-item {
+  height: 888px;
+  margin: 0 0;
+}
+
+.profile-pic {
+  display: block;
+  margin: 30px auto;
+  width: 420px;
+  height: 420px;
+  border-radius: 25%;
+  border: 3px solid white;
+  transition: all .5s;
+  box-shadow: 0 5px 20px -6px darkblue;
+  z-index:2;
+}
+
+.profile-pic:hover{
+    margin-top:20px;
+    margin-bottom:40px;
+    box-shadow: 0 9px 50px -6px tomato;
+    z-index: 3;
+}
+
+.pp-link{
+  cursor:pointer;
+}
+
+.articles{
+  padding:40px 20px;
+  /* border-top:10px tomato solid; */
   border-radius:5px;
-  padding:30px;
+  width:850px;
+  margin:60px auto;
+  margin-top:350px;
 }
 
-.bio:hover{
-  border-top:4px solid orange;
+.articles-2{
+  padding:40px 20px;
+  /* border-top:10px tomato solid; */
+  border-radius:5px;
+  width:850px;
+  margin:30px auto;
+}
+
+.article-border-bottom{
+  border-bottom:10px tomato solid;
+  margin:60px auto;
+  border-radius:5px;
+  border-radius: 5px;
+}
+
+.article-text{
+  height:400px;
+  margin-top:20px;
+  margin-bottom:50px;
+  padding:40px;
+  padding-left:60px;
+  border-radius: 15px;
+  line-height: 1.4em;
+  font-size: 1.2em;
+  box-shadow: 0 9px 30px -6px gray;
+  background:rgba(218, 223, 224, 0.29);
+  color:rgb(85, 254, 137)!important;
+  transition: all .5s;
+}
+
+.article-text span{
+  background: -webkit-linear-gradient(blue, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color:tomato;
+  display:block;
+  font-size:1.5em;
+  margin-top:120px;
+  margin-bottom:15px;
+  margin-left:-30px;
+}
+
+.article-text-carousel{
+  position:absolute;
+  background: -webkit-linear-gradient(blue, orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color:tomato;
+  display:block;
+  font-size:1.5em;
+  margin-top:120px;
+  margin-bottom:15px;
+  margin:0 auto;
+  margin-left:50%;
+  text-align:center;
+  z-index:1;
+}
+
+.paral{
+  min-height: 300px;
+}
+
+.icon{
+  height:50px;
+}
+
+
+/* contact */
+.contact{
+  display:flex;
+  margin-left:40px;
+  margin-top:30px;
+}
+
+/* footer */
+.wn-footer {
+    padding: 2.5rem 0;
+    text-align: center;
+    color: white;
+    background-color: #000000;
+    border-top: .05rem solid #e5e5e5;
+}
+
+.vid{
+  margin-top:15px;
+}
+
+.form{
+  width:80% !important;
+  height:200px !important;
+}
+
+.flex{
+  display:flex;
+  align-content: center;
+}
+.portfolio{
+  display:block;
+  /* text-align: -webkit-center;
+  vertical-align:middle; */
+}
+
+.portfolio-item{
+  width:800px;
+  height:400px;
+  margin:30px auto;
+  border-radius: 25px;
+  box-shadow: 0 9px 30px -6px gray;
+}
+.portfolio-item:hover{
+  margin-top:10px;
+  margin-bottom:50px;
+  box-shadow: 0 9px 30px -6px green;
+  transition: all .5s;
+  cursor:pointer;
+}
+
+.portfolio-item-2{
+  width:100%;
+  height:auto;
+  margin:30px auto;
+  border-radius: 25px;
+  box-shadow: 0 9px 30px -6px gray;
+}
+
+/* nav bar */
+.bg-light {
+    background-color: #f9f9fa00!important;
+}
+
+.img{
+  width:20%;
+}
+
+/* random  */
+.random{
+  display: flex;
+  min-height:50%;
+  margin-left:10%;
+  margin-bottom:150px;
+}
+
+.purp{
+    height:300px;
+    width:30%;
+}
+
+.skeet{
+  height:300px;
+  width:30%;
+}
+
+.blk{
+  height:300px;
+  width:30%;
 }
