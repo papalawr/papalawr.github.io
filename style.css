@@ -1,7 +1,45 @@
+/* font-family: 'Shrikhand', cursive;
+font-family: 'Roboto', sans-serif; */
+
 *, html, body{
   margin: 0px 0px;
+  font-family: 'Roboto', sans-serif;
 }
+
+p{
+    margin-top: -20px;
+}
+
+.wrap{
+  margin-bottom:30px;
+}
+
+/* typewriter */
+.typewriter{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation:
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
 /* video */
+
 /* Style the video: 100% width and height to cover the entire window */
 #myVideo {
   position: absolute;
@@ -25,6 +63,23 @@
     margin-left: 10px;
 }
 
+/*  */
+.nav-item{
+  font-family: 'Shrikhand', cursive;
+}
+
+.nav-link{
+  font-family: 'Shrikhand', cursive;
+}
+
+.nav-item:hover {
+    color: gold!important;
+}
+
+a.nav-link:hover {
+    color: gold!important;
+}
+
 /* Header Parallax Element Style*/
 
 .paral {
@@ -37,10 +92,11 @@
 /* Paragrapgh for Parallax Section */
 
 .paral p {
-    font-size: 30px;
+    font-size: 38px;
     color: #f5f5f5;
     text-align: center;
     line-height: 100px;
+    border-bottom: white 1px solid;
 }
 
 /* Heading for Parallax Section */
@@ -111,8 +167,8 @@
   padding: 2.5rem 0;
   text-align: center;
   color: white;
-  background-color: #607D8B;
-  border-top: .05rem solid #e5e5e5;
+  background-color:#36454f!important;
+  /* border-top: .05rem solid #e5e5e5; */
 }
 
 .wn-footer a {
@@ -120,13 +176,20 @@
 }
 
 .green {
-  color: white !important;
+  color: GOLD !important;
+  font-family: 'Shrikhand', cursive;
+  font-size: 5em!important;
+  transition: all 1s;
+  /* text-shadow: 2px 2px gold; */
 }
 
 /* rgb(85, 254, 137) */
 
 .blue{
   color:tomato!important;
+  font-family: 'Shrikhand', cursive;
+  font-size:3em;
+  margin-bottom: 1em;
 }
 
 /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff3019+0,a50803+100 */
@@ -207,7 +270,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', end
   /* border-top:10px tomato solid; */
   border-radius:5px;
   width:850px;
-  margin:60px auto;
+  margin:0px auto;
   margin-top:350px;
 }
 
@@ -218,6 +281,14 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', end
   width:850px;
   margin:30px auto;
 }
+
+.articles-3{
+    padding:40px 20px;
+    /* border-top:10px tomato solid; */
+    border-radius:5px;
+    width:850px;
+    margin:50px auto;
+  }
 
 .article-border-bottom{
   border-bottom:10px tomato solid;
@@ -366,4 +437,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', end
 .blk{
   height:300px;
   width:30%;
+}
+
+.pretend{
+  background:#36454f;
+  padding:30px;
+}
+
+.white-text{
+  color:white;
 }

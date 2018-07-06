@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Meta Tags for Bootstrap 4 -->
   <meta charset="utf-8">
@@ -24,6 +25,11 @@
   <!-- Bootstrap 4 CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+  <!-- or -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:900|Shrikhand" rel="stylesheet">
   <link rel="stylesheet/less" type="text/css" href="styles.less" />
   <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.0.2/less.min.js"></script>
   <title>Lawrence Chen | Front-End Web Developer & Graphic Designer</title>
@@ -44,6 +50,9 @@
         <a class="nav-link" href="#">About</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="#">Work</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link disabled" href="#">Contact</a>
       </li>
     </ul>
@@ -55,29 +64,34 @@
   <video autoplay muted loop id="myVideo">
       <source src="air.mp4" type="video/mp4">
     </video>
-  <h1 class="green">
-        Hello!
-      </h1>
-  <p class="green">I'm Lawrence Chen</p>
+  <p class="green animated fadeInUp">Lawrence Chen</p>
+  <a class="pp-link" href="#" alt="a picture of a man with a hat looking to the left, in the background is a lake and sky"><img src="art.jpg" class="profile-pic"></a>
+  <p class="about-text typewriter">
+    front-end web developer & graphic designer</p>
 </div>
 
 <div class="articles">
   <div class="col-sm-8">
-    <h2 class="blue">
+    <div class="wrap">
+      <h2 class="blue">
           About
       </h2>
-    <a class="pp-link" href="#" alt="a picture of a man with a hat looking to the left, in the background is a lake and sky"><img src="art.jpg" class="profile-pic"></a>
-    <p class="about-text">
-      I'm a front-end web developer and graphic designer based in Santa Barbara. My hobbies include surfing, cycling, and making art. Catch me coding at a local coffee shop or out on the bike path at the university.
-    </p>
-    <h2 class="blue">
+      <p class="about-text">
+        I'm a front-end web developer and graphic designer based in Santa Barbara. My hobbies include surfing, cycling, and making art. Catch me coding at a local coffee shop or out on the bike path at the university.
+      </p>
+    </div>
+
+    <div class="wrap">
+      <h2 class="blue">
           Skills
       </h2>
-    <p class="about-text">
-      HTML, CSS, JavaScript, jQuery, LESS, GitHub/Git, PHP Adobe Illustrator, Adobe PhotoShop, Adobe InDesign, Adobe AfterEffects
-    </p>
-    <div class="article-border-bottom">
+      <p class="about-text">
+        HTML, CSS, JavaScript, jQuery, LESS, GitHub/Git, PHP Adobe Illustrator, Adobe PhotoShop, Adobe InDesign, Adobe AfterEffects
+      </p>
+      <div class="article-border-bottom">
+      </div>
     </div>
+
   </div>
 </div>
 <!-- First Parallax Section -->
@@ -125,38 +139,62 @@
     <img src="santacruz.png" class="portfolio-item-2">
   </div>
 </div> -->
-<!--  -->
-<div class="jumbotron paral about">
-  <div class="col">
-    <h2 class="blue">
-      Contact me
-    </h2>
-    <div class="contact">
-      <iframe width="400px" height="400px" frameborder="0" style="border:0" class="map" src="https://www.google.com/maps/embed/v1/place?q=UCSB+&key=AIzaSyDJvHoq7GaxVKLboFOL70azt1pyLWfUnNo" allowfullscreen></iframe>
-  <div class="col-sm-8">
-    <div class="container form">
-      <form action="action_page.php">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        <label for="country">Country</label>
-        <select id="country" name="country">
-    <option value="usa">USA</option>
-    <option value="canada">Canada</option>
-    <option value="australia">Australia</option>
-  </select>
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-        <input type="submit" value="Submit">
-      </form>
+
+<div class="articles-2">
+  <div class="row">
+    <div class="col-sm-8">
+      <h2 class="blue">
+          Contact
+        </h2>
+      <p class="about-text">
+        Here's some of my work including a mock up I've built as well as my first published design work.
+        <div class="red-bot"></div>
+      </p>
     </div>
   </div>
 </div>
 </div>
+
+
+<div class="articles-3">
+  <div class="row">
+    <div class="col">
+      <div class="contact">
+        <iframe width="400px" height="400px" frameborder="0" style="border:0" class="map" src="https://www.google.com/maps/embed/v1/place?q=UCSB+&key=AIzaSyDJvHoq7GaxVKLboFOL70azt1pyLWfUnNo" allowfullscreen></iframe>
+        <div class="col-sm-8">
+          <div class="container form">
+            <form action="action_page.php">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <label for="country">Country</label>
+              <select id="country" name="country">
+    <option value="usa">USA</option>
+    <option value="canada">Canada</option>
+    <option value="australia">Australia</option>
+  </select>
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- Add More Parallax Sections Here -->
+<div class="pretend">
+  <h2 class="blue">
+      Contact
+    </h2>
+  <p class="white-text">
+    Here's some of my work including a mock up I've built as well as my first published design work.
+    <div class="red-bot"></div>
+  </div>
+
 
 <!-- Footer Section -->
 <footer class="wn-footer">
@@ -170,4 +208,5 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
+
 </html>
