@@ -1,0 +1,40 @@
+.nav-container{
+  background:#292929;
+  align-items: center;
+}
+
+.logo{
+  height:40px;
+  padding:5px;
+  padding-left:40px;
+  margin-top: 7px;
+}
+
+.nav-bar{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.right{
+  display:flex;
+}
+
+.nav-link{
+  display:inline-block;
+  text-decoration: none;
+  color:white;
+}
+
+.offline-button{
+  background:tomato;
+  color:white;
+  border-radius:25px;
+  margin:20px;
+}
+
+.offline-button:hover{
+  color:black;
+  background:tomato;
+}

@@ -1,0 +1,93 @@
+/* // Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { ... }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { ... }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+
+body.boxed-layout, .boxed-layout .nav-container, .boxed-layout .main-container, .boxed-layout nav{
+  max-width: 100%!important;
+}
+
+/* .cal  calendar photo */
+.cal{
+}
+
+.container{
+  padding-top:50px;
+}
+
+.logo-icon{
+  box-shadow: 0 9px 30px -6px red;
+  border-radius: 25px;
+  margin-bottom: 15px;
+}
+
+.btn-filled{
+    background:tomato!important;
+    border:none;
+}
+
+.mb-xs-16{
+  color:tomato!important;
+  font-size: 4em;
+}
+
+.pt120 {
+    padding-top: 93px;
+}
+section, footer {
+    padding: 5px 0;
+}
+footer {
+    padding: 15px 0;
+}
+
+.overlay:before{
+  /* background:white; */
+}
+
+.color-primary {
+    color: tomato !important;
+}
+
+.icon{
+  color: tomato !important;
+}
+
+.feature-3 i {
+    color: tomato !important;
+}
+
+.parallax > .background-image-holder, .parallax .slides li > .background-image-holder {
+  top: -100vh;
+}
+
+.col-md-push-6 {
+    left: 45%;
+    margin-bottom: 50px;
+
+
+.col-md-5 {
+    width: 33.666667%;
+}
+
+.parallax > .background-image-holder, .parallax .slides li > .background-image-holder {
+    top: -75vh;
+}
+
+.pb120 {
+    padding-bottom: 0!important;
+}
+
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
