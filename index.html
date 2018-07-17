@@ -1,140 +1,151 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!doctype html>
+<html>
 <head>
-  <!-- Meta Tags for Bootstrap 4 -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="apple-touch-icon" sizes="57x57" href="fav.ico/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="fav.ico/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="fav.ico/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="fav.ico/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="fav.ico/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="fav.ico/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="fav.ico/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="fav.ico/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="fav.ico/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="fav.ico/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="fav.ico/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="fav.ico/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="fav.ico/favicon-16x16.png">
-  <link rel="manifest" href="fav.ico/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
-  <!-- Bootstrap 4 CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-  <!-- or -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:900|Shrikhand" rel="stylesheet">
-  <link rel="stylesheet/less" type="text/css" href="styles.less" />
-  <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.0.2/less.min.js"></script>
-  <title>Lawrence Chen | Developer & Designer</title>
+  <title>
+    Lawrence Chen
+  </title>
+  <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+<link rel="manifest" href="icon/site.webmanifest">
+<link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#3f549e">
+<meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+
+
 </head>
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  <a class="navbar-brand" href="#">
-      <img src="vb.png" height="30px" alt="this is a graphic illustration of Lawrence Chen's crest which is a formosan black bear used as a logo">
-  </a>
-  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Work</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Contact</a>
-      </li>
-    </ul>
-  </div>
+
+<body>
+  <nav>
+  <ul id='navbar' class="navbar-fixed-top">
+    <li><a class="nav-link" href="#welcome-section">Home</a></li>
+    <li><a class="nav-link" href="#aboutme">About</a></li>
+    <li><a class="nav-link" href="#projects">Projects</a></li>
+    <!-- <li><a class="nav-link" href="#skills-section">Skills</a></li> -->
+    <li><a class="nav-link" href="#contact">Contact</a></li>
+  </ul>
 </nav>
-<!--  -->
-<div class="jumbotron paral paralsec1 about">
-  <!-- The video -->
-  <video autoplay muted loop id="myVideo">
-      <source src="air.mp4" type="video/mp4">
-    </video>
-  <p class="green animated fadeInUp">Lawrence Chen</p>
-  <a class="pp-link" href="#" alt="a picture of a man with a hat looking to the left, in the background is a lake and sky"><img src="art.jpg" class="profile-pic"></a>
-  <p class="about-text typewriter">
-    Web Developer & Designer</p>
+
+<div id="welcome-section" class="intro">
+  <h1>Lawrence Chen</h1>
+  <p>front-end web developer</p>
+  <!-- <button href="#contact">Contact</button> -->
 </div>
 
-<div class="articles">
-  <div class="col-sm-8">
-    <div class="wrap">
-      <h2 class="blue">
-          About
-      </h2>
-      <p class="about-text">
-        I'm a front-end web developer and graphic designer based in Santa Barbara. My hobbies include surfing, cycling, and making art. Catch me coding at a local coffee shop or out on the bike path at the university.
-      </p>
-    </div>
+<div id="aboutme" class="#">
+  <p class="summary">
+    <span>About</span>
+    <br>Lawrence is a UC Santa Barbara graduate. Outside of coding and developing websites, he's an artist specializing in graphic illustration. Although he splits his free-time between liberal amounts of shows, movies, and video games, he's also passionate about exercise and health. For the summer, he's currently surfing and rock climbing.</p>
+    <!-- <img src="images/santacruz.png" alt="graphic art of santa cruz by me" id="artwork"> -->
+</div>
 
-    <div class="wrap">
-      <h2 class="blue">
-          Skills
-      </h2>
-      <p class="about-text">
-        HTML, CSS, JavaScript, jQuery, LESS, GitHub/Git, PHP Adobe Illustrator, Adobe PhotoShop, Adobe InDesign, Adobe AfterEffects
-      </p>
-      <div class="article-border-bottom">
-      </div>
-    </div>
+<div id="projects" class="work">
+  <h2 class="work-header">Projects</h2>
+  <a href="calendario/page.html" target="_blank" class="project project-tile">
+    <img class="project-pic" src="calendario/photo/hero.jpg" alt="project">
+    <div class="project-title">Calendario</div>
+    <p>Mock Up for a Calendar App project</p>
+  </a>
+  <a href="lisatravels/index.html" target="_blank" class="project project-tile">
+    <img class="project-pic" src="lisatravels/hero.jpg" alt="project">
+    <div class="project-title">Travel Blog</div>
+    <p>Mock Up for a travel blog</p>
+  </a>
+  <a href="https://class.arts.ucsb.edu/~art122/s_18/chen_lawrence/Maps/maps_4.0.html
+" target="_blank" class="project project-tile">
+    <img class="project-pic" src="map.jpg" alt="project">
+    <div class="project-title">Map Data</div>
+    <p>Google Maps Hacking Project</p>
+  </a>
 
+  <a href="http://foundation.arts.ucsb.edu/~art7d/w18/ochoca/Lawrence/ANTI/man2.html" target="_blank" class="project project-tile">
+    <img class="project-pic" src="social.png" alt="project">
+    <div class="project-title">"How Social Media Works"</div>
+    <p>Interactive webcomic about social media</p>
+  </a>
+
+  <a href="images/santacruz.png" target="_blank" class="project project-tile">
+    <img class="project-pic" src="images/santacruz.png" alt="project">
+    <div class="project-title">"Illustrations"</div>
+    <p>Cover for the Catalyst Contemporary Arts Magazine</p>
+  </a>
+</div>
+
+<!-- <div id="skillset" class="contact">
+  <li>
+    <ul>
+      <a href="icon" class="contact-details"><img src="#"></a>
+      HTML5
+    </ul>
+    <ul>
+      <a href="icon" class="contact-details"><img src="#"></a>
+      CSS3
+    </ul>
+    <ul>
+      <a href="icon" class="contact-details"><img src="#"></a>
+      JavaScript/jQuery
+    </ul>
+    <ul>
+      <a href="icon" class="contact-details"><img src="#"></a>
+      Adobe PhotoShop
+    </ul>
+    <ul>
+      <a href="icon" class="contact-details"><img src="#"></a>
+      Adobe Illustrator
+    </ul>
+  </li>
+</div> -->
+
+
+<div id="contact" class="contact">
+  <div class="header">
+    <!-- <h1>Let's work together</h1>
   </div>
-</div>
-<!-- First Parallax Section -->
-<div class="jumbotron paral paralsec">
-</div>
-
-<div class="articles-2">
-  <div class="row">
-    <div class="col-sm-8">
-      <h2 class="blue">
-          Showcase
-        </h2>
-      <p class="about-text">
-        Here's some of my work including a mock up I've built as well as my first published design work.
-        <div class="red-bot"></div>
-      </p>
-    </div>
-    <div class="col-sm-8">
-      <p class="about-text"> Calendario is a mock up site for schedule planning and
-      </p>
-      <p class="about-text">It is a site that I customized to fit my scheduling needs.</p>
-      <p class="about-text"> For the calendar section of this app, I utilized Kendo UI's clean calendar interface. </p>
-    </div>
-    <img src="cal.png" class="portfolio-item">
-    <div class="col-sm-8">
-      <p class="about-text">In October, I submitted to the contemporary arts mazagine at UCSB. This is my first printed publication, <em>Santa Cruz</em></p>
-    </div>
-    <img src="santacruz.png" class="portfolio-item">
-  </div>
-  <div class="red-bot"></div>
+  <button>Email</button>
+  <button>Phone</button> -->
+  <!-- <a href="https://facebook.com/freecodecamp" target="_blank" class="contact-details">Email</a>
+  <a href="https://twitter.com/freecodecamp" target="_blank" class="contact-details">Phone</a>
+  <a id='profile-link' href="https://github.com/papalawr" target="_blank" class="contact-details">GitHub</a> -->
+  <div class="container">
+	<h3>Let's work together</h3>
+	<form action="#" name="contact_form">
+		<label for="first_name">First Name</label>
+		<input name="first_name" type="text" required placeholder="First Name"/>
+		<br>
+		<label for="last_name">Last Name</label>
+		<input name="last_name" type="text" required placeholder="Last Name"/>
+		<br>
+		<label for="email">Email</label>
+		<input name="email" type="email" required placeholder="you@domain.com"/>
+		<br>
+		<label for="message">Message</label><br>
+		<textarea name="message" cols="30" rows="10" placeholder="Enter your message here ..." required> </textarea>
+		<div class="center">
+			<input type="submit" value="Submit">
+		</div>
+	</form>
 </div>
 
-<!-- Footer Section -->
-<footer class="wn-footer">
-  <img src="vb.png" height="100px">
-  <p>
-    copyright 2018
-  </p>
+</div>
+
+</div>
+
+
+<footer>
+    <img src="icon/favicon-32x32.png">
+    <p>&copy; 2018</p>
+
 </footer>
-<!-- Bootstrap 4 Scripts -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+  $(function () {
+    $(document).scroll(function () {
+  	  var $nav = $(".navbar-fixed-top");
+  	  $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  	});
+  });
+</script>
 </body>
-
 </html>
