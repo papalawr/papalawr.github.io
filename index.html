@@ -1,151 +1,177 @@
 <!doctype html>
 <html>
 <head>
-  <title>
-    Lawrence Chen
-  </title>
-  <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
-<link rel="manifest" href="icon/site.webmanifest">
-<link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="msapplication-TileColor" content="#3f549e">
-<meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
+    <title>
+        Lawrence Chen
+    </title>
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+    <link rel="manifest" href="icon/site.webmanifest">
+    <link rel="mask-icon" href="icon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#3f549e">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="js/fullpage.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
 
 </head>
 
 <body>
-  <nav>
-  <ul id='navbar' class="navbar-fixed-top">
-    <li><a class="nav-link" href="#welcome-section">Home</a></li>
-    <li><a class="nav-link" href="#aboutme">About</a></li>
-    <li><a class="nav-link" href="#projects">Projects</a></li>
-    <!-- <li><a class="nav-link" href="#skills-section">Skills</a></li> -->
-    <li><a class="nav-link" href="#contact">Contact</a></li>
-  </ul>
+<nav>
+    <ul id='navbar' class="navbar-fixed-top">
+        <li>
+            <a class="nav-link" href="#welcome-section">Home</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#aboutme">About</a>
+        </li>
+        <li>
+            <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <!-- <li><a class="nav-link" href="#skills-section">Skills</a></li> -->
+        <li>
+            <a class="nav-link" href="#contact">Contact</a>
+        </li>
+    </ul>
 </nav>
+<div id="fullpage">
+    <div id="welcome-section" class="intro section">
+        <h1>Lawrence Chen</h1>
+        <p>front-end web developer</p>
+        <!-- <button href="#contact">Contact</button> -->
+    </div>
 
-<div id="welcome-section" class="intro">
-  <h1>Lawrence Chen</h1>
-  <p>front-end web developer</p>
-  <!-- <button href="#contact">Contact</button> -->
+    <div id="aboutme" class=" section">
+        <p class="summary">
+            <span>About</span>
+            <br>Lawrence is a UC Santa Barbara graduate. Outside of coding and developing websites, he's an artist specializing in graphic illustration. Although he splits his free-time between liberal amounts of shows, movies, and video games, he's also passionate about exercise and health. For the summer, he's currently surfing and rock climbing.
+        </p>
+        <!-- <img src="images/santacruz.png" alt="graphic art of santa cruz by me" id="artwork"> -->
+    </div>
+
+    <div id="projects" class="work section">
+        <h2 class="work-header">Projects</h2>
+        <a href="calendario/page.html" target="_blank" class="project project-tile">
+            <img class="project-pic" src="calendario/photo/hero.jpg" alt="project">
+            <div class="project-title">Calendario</div>
+            <p>Mock Up for a Calendar App project</p>
+        </a>
+        <a href="lisatravels/index.html" target="_blank" class="project project-tile">
+            <img class="project-pic" src="lisatravels/hero.jpg" alt="project">
+            <div class="project-title">Travel Blog</div>
+            <p>Mock Up for a travel blog</p>
+        </a>
+        <a href="https://class.arts.ucsb.edu/~art122/s_18/chen_lawrence/Maps/maps_4.0.html" target="_blank" class="project project-tile">
+            <img class="project-pic" src="map.jpg.png" alt="project">
+            <div class="project-title">Map Data</div>
+            <p>Google Maps Hacking Project</p>
+        </a>
+
+        <a href="http://foundation.arts.ucsb.edu/~art7d/w18/ochoca/Lawrence/ANTI/man2.html" target="_blank" class="project project-tile">
+            <img class="project-pic" src="social.png" alt="project">
+            <div class="project-title">"How Social Media Works"</div>
+            <p>Interactive webcomic about social media</p>
+        </a>
+
+        <a href="images/santacruz.png" target="_blank" class="project project-tile">
+            <img class="project-pic" src="images/santacruz.png" alt="project">
+            <div class="project-title">"Illustrations"</div>
+            <p>Cover for the Catalyst Contemporary Arts Magazine</p>
+        </a>
+    </div>
+
+    <!-- <div id="skillset" class="contact">
+      <li>
+        <ul>
+          <a href="icon" class="contact-details"><img src="#"></a>
+          HTML5
+        </ul>
+        <ul>
+          <a href="icon" class="contact-details"><img src="#"></a>
+          CSS3
+        </ul>
+        <ul>
+          <a href="icon" class="contact-details"><img src="#"></a>
+          JavaScript/jQuery
+        </ul>
+        <ul>
+          <a href="icon" class="contact-details"><img src="#"></a>
+          Adobe PhotoShop
+        </ul>
+        <ul>
+          <a href="icon" class="contact-details"><img src="#"></a>
+          Adobe Illustrator
+        </ul>
+      </li>
+    </div> -->
+
+    <div id="contact" class="contact section">
+        <div class="header">
+            <!-- <h1>Let's work together</h1>
+          </div>
+          <button>Email</button>
+          <button>Phone</button> -->
+            <!-- <a href="https://facebook.com/freecodecamp" target="_blank" class="contact-details">Email</a>
+            <a href="https://twitter.com/freecodecamp" target="_blank" class="contact-details">Phone</a>
+            <a id='profile-link' href="https://github.com/papalawr" target="_blank" class="contact-details">GitHub</a> -->
+            <div class="container">
+                <h3>Let's work together</h3>
+                <form action="#" name="contact_form">
+                    <!--<label for="first_name">First Name</label>-->
+                    <div>
+                        <input name="first_name" type="text" required placeholder="First Name"/>
+                    </div>
+                    <!--<br>-->
+                    <!--<label for="last_name">Last Name</label>-->
+                    <div>
+                        <input name="last_name" type="text" required placeholder="Last Name"/>
+                    </div>
+                    <!--<br>-->
+                    <!--<label for="email">Email</label>-->
+                    <div>
+                        <input name="email" type="email" required placeholder="you@domain.com"/>
+                    </div>
+                    <!--<br>-->
+                    <!--<label for="message">Message</label><br>-->
+                    <div>
+                        <textarea name="message" cols="30" rows="10" placeholder="Enter your message here ..." required> </textarea>
+                    </div>
+                    <div class="center">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
 </div>
-
-<div id="aboutme" class="#">
-  <p class="summary">
-    <span>About</span>
-    <br>Lawrence is a UC Santa Barbara graduate. Outside of coding and developing websites, he's an artist specializing in graphic illustration. Although he splits his free-time between liberal amounts of shows, movies, and video games, he's also passionate about exercise and health. For the summer, he's currently surfing and rock climbing.</p>
-    <!-- <img src="images/santacruz.png" alt="graphic art of santa cruz by me" id="artwork"> -->
-</div>
-
-<div id="projects" class="work">
-  <h2 class="work-header">Projects</h2>
-  <a href="calendario/page.html" target="_blank" class="project project-tile">
-    <img class="project-pic" src="calendario/photo/hero.jpg" alt="project">
-    <div class="project-title">Calendario</div>
-    <p>Mock Up for a Calendar App project</p>
-  </a>
-  <a href="lisatravels/index.html" target="_blank" class="project project-tile">
-    <img class="project-pic" src="lisatravels/hero.jpg" alt="project">
-    <div class="project-title">Travel Blog</div>
-    <p>Mock Up for a travel blog</p>
-  </a>
-  <a href="https://class.arts.ucsb.edu/~art122/s_18/chen_lawrence/Maps/maps_4.0.html
-" target="_blank" class="project project-tile">
-    <img class="project-pic" src="map.jpg" alt="project">
-    <div class="project-title">Map Data</div>
-    <p>Google Maps Hacking Project</p>
-  </a>
-
-  <a href="http://foundation.arts.ucsb.edu/~art7d/w18/ochoca/Lawrence/ANTI/man2.html" target="_blank" class="project project-tile">
-    <img class="project-pic" src="social.png" alt="project">
-    <div class="project-title">"How Social Media Works"</div>
-    <p>Interactive webcomic about social media</p>
-  </a>
-
-  <a href="images/santacruz.png" target="_blank" class="project project-tile">
-    <img class="project-pic" src="images/santacruz.png" alt="project">
-    <div class="project-title">"Illustrations"</div>
-    <p>Cover for the Catalyst Contemporary Arts Magazine</p>
-  </a>
-</div>
-
-<!-- <div id="skillset" class="contact">
-  <li>
-    <ul>
-      <a href="icon" class="contact-details"><img src="#"></a>
-      HTML5
-    </ul>
-    <ul>
-      <a href="icon" class="contact-details"><img src="#"></a>
-      CSS3
-    </ul>
-    <ul>
-      <a href="icon" class="contact-details"><img src="#"></a>
-      JavaScript/jQuery
-    </ul>
-    <ul>
-      <a href="icon" class="contact-details"><img src="#"></a>
-      Adobe PhotoShop
-    </ul>
-    <ul>
-      <a href="icon" class="contact-details"><img src="#"></a>
-      Adobe Illustrator
-    </ul>
-  </li>
-</div> -->
-
-
-<div id="contact" class="contact">
-  <div class="header">
-    <!-- <h1>Let's work together</h1>
-  </div>
-  <button>Email</button>
-  <button>Phone</button> -->
-  <!-- <a href="https://facebook.com/freecodecamp" target="_blank" class="contact-details">Email</a>
-  <a href="https://twitter.com/freecodecamp" target="_blank" class="contact-details">Phone</a>
-  <a id='profile-link' href="https://github.com/papalawr" target="_blank" class="contact-details">GitHub</a> -->
-  <div class="container">
-	<h3>Let's work together</h3>
-	<form action="#" name="contact_form">
-		<label for="first_name">First Name</label>
-		<input name="first_name" type="text" required placeholder="First Name"/>
-		<br>
-		<label for="last_name">Last Name</label>
-		<input name="last_name" type="text" required placeholder="Last Name"/>
-		<br>
-		<label for="email">Email</label>
-		<input name="email" type="email" required placeholder="you@domain.com"/>
-		<br>
-		<label for="message">Message</label><br>
-		<textarea name="message" cols="30" rows="10" placeholder="Enter your message here ..." required> </textarea>
-		<div class="center">
-			<input type="submit" value="Submit">
-		</div>
-	</form>
-</div>
-
-</div>
-
-</div>
-
-
 <footer>
     <img src="icon/favicon-32x32.png">
     <p>&copy; 2018</p>
 
 </footer>
+<script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+<script src="js/fullpage.min.js"></script>
 <script>
-  $(function () {
-    $(document).scroll(function () {
-  	  var $nav = $(".navbar-fixed-top");
-  	  $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-  	});
-  });
+	$(function () {
+		$('#fullpage').fullpage({
+			licenseKey: "OPEN-SOURCE-GPLV3-LICENSE"//,
+			//sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
+		});
+		$(document).scroll(function () {
+			var $nav = $(".navbar-fixed-top");
+			$nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+		});
+	});
 </script>
 </body>
 </html>
