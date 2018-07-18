@@ -1,0 +1,304 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Documentation ContactMe - Responsive AJAX Contact Form - HTML5 PHP</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;ContactMe&rdquo; Documentation by &ldquo;21 Tools&rdquo; v1.4</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;ContactMe&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 10/07/2017<br>
+					By: 21 Tools<br>
+					Email: <a href="mailto:info@21tools.it">info@21tools.it</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing our script. If you have any questions that are beyond the scope of this help file, please feel free to email via our user page contact form <a href="https://codecanyon.net/user/21tools" target="_blank">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+
+		<h3 style="text-align:center;"><strong>ATTENTION</strong></h3>
+		<p style="text-align:center;">If your download is corrupt, please contact us at <a href="mailto:info@21tools.it">info@21tools.it</a> and we'll send to you a new copy of the script.</p>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#quickStartGuide">Quick start guide</a></li>
+			<li><a href="#customizeAdvancedOptions">Customize advanced options</a></li>
+			<li><a href="#setupGoogleRecaptcha">Setup Google reCAPTCHA</a></li>
+			<li><a href="#howToAddCheckboxAndRadioButton">How to add Checkbox and Radio button</a></li>
+			<li><a href="#changeLanguage">Change language</a></li>
+			<li><a href="#chooseThemeDesign">Choose theme design</a></li>
+			<li><a href="#changeAllowedUploadFilesType">Change allowed upload files type</a></li>
+			<li><a href="#connect2DateFields">Connect 2 date fields</a></li>
+			<li><a href="#emailCustomizations">Email customizations</a></li>
+			<li><a href="#setFormFieldAsSubjectOfTheEmail">Set a form field as SUBJECT of the email</a></li>
+			<li><a href="#sendEmailFromAFormField">Send email FROM a form field</a></li>
+			<li><a href="#sendEmailToAFormField">Send email TO a form field</a></li>
+			<li><a href="#sizeOfTheForm">Size of the form</a></li>
+			<li><a href="#createCustomForm">Create Custom Form</a></li>
+			<li><a href="#rateTheScript">Rate the script</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="quickStartGuide"><strong>A) Quick start guide</strong> - <a href="#toc">top</a></h3>
+		
+		<p>This script can be simply installed in your website, to do this, follow these istructions:</p>
+
+		<ol>
+			<li>Unzip the archive and upload the folder "contactme" to your server.</li>
+			<li>Open the demo file index.html, in the &lt;head&gt; section copy from "START css copy section" to "END css copy section" and paste into the &lt;head&gt; element of your HTML page.</li>
+			<li>Open the demo file index.html, copy from "START js copy section" to "END js copy section" and paste before the &lt;/body&gt; close tag element of your HTML page.</li>
+			<li>Copy the form code you choose and put it in your HTML page where you want to show it. Example: if you want to use the "General Contact Form" you should copy the code from "START copy section: General Contact Form" to "END copy section: General Contact Form".</li>
+			<li>Open the file: /contactme/configs.php and fill in the values for the only 3 required configs: from_name, from_address, to_addresses. (each option is well explained on the right).</li>
+		</ol>
+
+		<p>If your site already use jQuery plugin, remove the jQuery line from the section "START js copy section" to avoid to import it twice.</p>
+
+		<p>NOTE: If you need to change some fields of the example forms, or if you need to create a custom form, you have to read this chapter of the Documentation: <a href="#createCustomForm">Create Custom Form</a></p>
+
+		<p><strong>ATTENTION:</strong> sometimes the CSS of your site may conflict with the CSS of our script, if something looks strange contact us. We can help you to fix the problem.</p>
+
+		<hr>
+
+		<h3 id="customizeAdvancedOptions"><strong>B) Customize advanced options</strong> - <a href="#toc">top</a></h3>
+
+		<p>All the options are in the file: /contactme/configs.php</p>
+
+		<p>Each option is well explained, so read the information and feel free to customize the value.</p>
+
+		<p><strong>ATTENTION:</strong> The option "from_address" is very important. You should use an email address with the same domain of your server url. Otherwise it may be classed as "spam".</p>
+
+		<hr>
+
+		<h3 id="setupGoogleRecaptcha"><strong>C) Setup Google reCAPTCHA</strong> - <a href="#toc">top</a></h3>
+
+		<p>You can choose wich version to activate: <strong>reCAPTCHA V2</strong> or <strong>Invisible reCAPTCHA</strong></p>
+		<p>Create a site key of the version you chose for your website: <a href="https://www.google.com/recaptcha" target="_blank">https://www.google.com/recaptcha</a> and then put the key as described:</p>
+
+		<ol>
+			<li>Copy the "Site Key" and replace the string "YOUR_SITE_KEY_HERE" in the HTML of the form</li>
+			<li>Copy the "Secret" and replace the value of "recaptcha_secret" in the file /contactme/configs.php</li>
+		</ol>
+
+		<p>To enable the Google reCAPTCHA follow these steps:</p>
+
+		<ul>
+			<li>Set to "true" the value of "recaptcha_enabled" in the file /contactme/configs.php</li>
+			<li>In the js copied section, uncomment the line of Google reCAPTCHA</li>
+			<li>In the form code uncomment the line of the Google reCAPTCHA version you chose.</li>
+		</ul>
+
+		<hr>
+
+		<h3 id="howToAddCheckboxAndRadioButton"><strong>D) How to add Checkbox and Radio button</strong> - <a href="#toc">top</a></h3>
+
+		<p>You can add checkboxes or radio buttons in the form by simple follow these steps:</p>
+
+		<ul>
+			<li>Copy the HTML code of the Checkbox or the Radio button from one of the examples and paste it in your form. (the copy section is between "START copy section: Checkbox" and "END copy section: Checkbox", it is the same also for the Radio button)</li>
+			<li>Open the sending .php file of the form you chose. (Example: the sending file for the General Contact Form is /contactme/send-general-form.php).</li>
+			<li>In the "$fields" array, each line is for one input of the form.</li>
+			<li>By maintain the same order of the fields in the HTML form, add a new line for the Checkbox or Radio button (it depends on what you are adding). Here an exemple for a Checkbox: <pre>$fields[] = array('name' => 'privacy', 'display_name' => 'Privacy terms', 'type' => 'checkbox', 'required' => true);</pre></li>
+		</ul>
+
+		<p><strong>ATTENTION:</strong> make sure to set "name" value equal to the "name" attribute of the field in the HTML form code.</p>
+
+		<hr>
+
+		<h3 id="changeLanguage"><strong>E) Change language</strong> - <a href="#toc">top</a></h3>
+
+		<p>All messages are translated in 5 languages: English, Spanish, German, Italian, Russian. The default language is English, but you can change it. Each Language has a different code: English (en), Spanish (es), German (de), Italian (it), Russian (ru).</p>
+
+		<p>Follow these istructions to change the language of the messages:</p>
+
+		<ol>
+			<li>Open the file /contactme/configs.php and replace the "lang_path" value by changing the "en" with the new code language.</li>
+			<li>Open the file /contactme/js/contactme-config.js and replace the "Language options" with the new language code.</li>
+		</ol>
+
+		<p>Follow these istructions to change the language of the dropdown and datepicker plugin:</p>
+
+		<ol>
+			<li>In the js copied section of the code, replace the line "&lt;script src="contactme/js/select2-lang/en.js"&gt;&lt;/script&gt;" by changing the "en" with the new code language.</li>
+			<li>In the js copied section of the code, replace the line "&lt;script src="contactme/js/bootstrap-datepicker-lang/en.js"&gt;&lt;/script&gt;" by changing the "en" with the new code language.</li>
+		</ol>
+
+		<hr>
+
+		<h3 id="chooseThemeDesign"><strong>F) Choose theme design </strong> - <a href="#toc">top</a></h3>
+		
+		<p>We have created 7 concrete examples and 4 different graphics themes. You can choose between 4 different themes: Default, Modern, London, Minimal.</p>
+
+		<p>This is the first code line of the "General Contact Form"</p>
+
+		<p style="font-style:italic;">&lt;form class="contactMe small" action="contactme/send-general-form.php" method="POST" enctype="multipart/form-data"&gt;</p>
+		
+		<p>The Defalt Theme is already active, but if you want to change the theme, you have to replace <span style="font-style:italic;">class="contactMe small"</span> with: <span style="font-style:italic;">class="contactMe small theme-modern"</span> or <span style="font-style:italic;">class="contactMe small theme-london"</span> or <span style="font-style:italic;">class="contactMe small theme-minimal"</span></p>
+		
+		<hr>
+
+		<h3 id="changeAllowedUploadFilesType"><strong>G) Change allowed upload files type</strong> - <a href="#toc">top</a></h3>
+
+		<p>You can change the allowed upload file type for each file input, to do it follow these steps:</p>
+
+		<ul>
+			<li>In the HTML form code, change the value of "data-allowedtypes" by adding/removing allowed extensions. (must be separated by comma)</li>
+			<li>Set the same extensions also in the sending .php file of the form you chose. (Example: the sending file for the General Contact Form is /contactme/send-general-form.php). In the "$fields" array, each line is for one input of the form, find the one of the upload file input and at the end add this code: <pre>, 'allowed_types' => array('jpg', 'png', 'zip')</pre> Of course you have to put inside the extensions that you want to allow.</li>
+		</ul>
+
+		<p><strong>ATTENTION:</strong> Each line already has something similar, for example: <i>"required" => true</i> so don't forget the comma.</p>
+
+		<p><strong>ATTENTION:</strong> The default allowed types array is in the configs.php file. It's used when no extensions are specified in the sending .php file.</p>
+
+		<p>If you're using only one form or each upload input has to accept the same extensions type, you can simply edit the types array in the configs.php file, but if you are using more than one form or each upload input has to accept different extensions type, you have to specify the allowed extensions in each sending files.</p>
+
+		<hr>
+		
+		<h3 id="connect2DateFields"><strong>H) Connect 2 date fields</strong> - <a href="#toc">top</a></h3>
+		
+		<p>You can connect 2 date fields if the second date is required to be after the first. This is useful if you need to use them like in a hotel check-in / check-out.</p>
+
+		<p>To do it follow these steps:</p>
+
+		<ul>
+			<li>Add un unique ID attribute to both the date fields. (for example: id="date-start-1" and id="date-end-1").</li>
+			<li>On the Start Date field add the attribute "data-idconnecteddateend" and set as value the ID of the End Date field. (for example: data-idconnecteddateend="date-end-1").</li>
+			<li>On the End Date field add the attribute "data-idconnecteddatestart" and set as value the ID of the Start Date field. (for example: data-idconnecteddatestart="date-start-1").</li>
+		</ul>
+
+		<p>That's it, now these 2 date fields are connected.</p>
+
+		<p>NOTE: You can see how it works in our demo: HOTEL CONTACT FORM</p>
+
+		<p><strong>ATTENTION:</strong> If you want to remove this feature, just remove the ID attribute to both the date fields. Remove also the attribute "data-idconnecteddateend" from the End Date field and the attribute "data-idconnecteddatestart" from the Start Date field.</p>
+
+		<hr>
+		
+		<h3 id="emailCustomizations"><strong>I) Email customizations</strong> - <a href="#toc">top</a></h3>
+		
+		<p>The script send 2 emails: the first to the site owner an the second to the user for confirmation. You can edit the email messages in the file of the language you choose: /contactme/lang/.......json</p>
+
+		<p>USER CONFIRMATION EMAIL: Inside the "emails_info" you can find "confirmation", so you can edit "subject" and "body" of the confirmation email sended to the user.</p>
+
+		<p>SITE OWNER: Inside "emails_info" you can find "subject" that is the subject of the email sended to the site owner.<br />If you are a developer: you can edit the body of this email in the file /contactme/functions.php by editing the functions getHtmlEmailContent()</p>
+
+		<hr>
+		
+		<h3 id="setFormFieldAsSubjectOfTheEmail"><strong>J) Set a form field as SUBJECT of the email</strong> - <a href="#toc">top</a></h3>
+
+		<p>You can set a form field as SUBJECT of the email sent to the site owner. To do it, follow these steps:</p>
+
+		<ul>
+			<li>Open the sending .php file of the form you chose. (Example: the sending file for the General Contact Form is /contactme/send-general-form.php).</li>
+			<li>In the "$fields" array, each line is for one input of the form.</li>
+			<li>Find the line of the field you want to use as SUBJECT and add this code at the end: <pre>, "use_as_subject" => true</pre></li>
+		</ul>
+
+		<p><strong>ATTENTION:</strong> Each line already has something similar, for example: <i>"required" => true</i> so don't forget the comma.</p>
+
+		<p>You can also add a custom text to put before the user's text in the subject of the email. To add it, just open the file of the language you choose: /contactme/lang/.......json and edit the value of "custom_before_subject".</p>
+
+		<hr>
+
+		<h3 id="sendEmailFromAFormField"><strong>K) Send email FROM a form field</strong> - <a href="#toc">top</a></h3>
+
+		<p>You can use a form field as FROM address in the email. To do it, follow these steps:</p>
+
+		<ul>
+			<li>Open the sending .php file of the form you chose. (Example: the sending file for the General Contact Form is /contactme/send-general-form.php).</li>
+			<li>In the "$fields" array, each line is for one input of the form.</li>
+			<li>Find the line of the field you want to use as FROM and add this code at the end: <pre>, "email_from_this" => true</pre></li>
+		</ul>
+
+		<p><strong>ATTENTION:</strong> Each line already has something similar, for example: <i>"required" => true</i> so don't forget the comma.</p>
+
+		<hr>
+		
+		<h3 id="sendEmailToAFormField"><strong>L) Send email TO a form field</strong> - <a href="#toc">top</a></h3>
+
+		<p>You can use a form field as TO address in the email. To do it, follow these steps:</p>
+
+		<ul>
+			<li>Open the sending .php file of the form you chose. (Example: the sending file for the General Contact Form is /contactme/send-general-form.php).</li>
+			<li>In the "$fields" array, each line is for one input of the form.</li>
+			<li>Find the line of the field you want to use as TO and add this code at the end: <pre>, "email_to_this" => true</pre></li>
+		</ul>
+
+		<p><strong>ATTENTION:</strong> Each line already has something similar, for example: <i>"required" => true</i> so don't forget the comma.</p>
+
+		<hr>
+
+		<h3 id="sizeOfTheForm"><strong>M) Size of the form </strong> - <a href="#toc">top</a></h3>
+
+		<p>You can choose between 3 different sizes:</p>
+		
+		<ol>
+			<li>AUTO: the form will fit the container size</li>
+			<li>XSMALL: the form will be 300px width</li>
+			<li>SMALL: the form will be 400px width</li>
+			<li>MEDIUM: the form will be 500px width</li>
+		</ol>
+
+		<p>This is the first code line of the "General Contact Form"</p>
+
+		<p style="font-style:italic;">&lt;form class="contactMe small" action="contactme/send-general-form.php" method="POST" enctype="multipart/form-data"&gt;</p>
+
+		<p>As you can see, this is setted to "small" size, you can change it to "medium" size simply changing that word. NOTE: if you want the form to fit the container size, simply remove "small" and "medium".</p>
+
+		<hr>
+
+		<h3 id="createCustomForm"><strong>N) Create Custom Form </strong> - <a href="#toc">top</a></h3>
+
+		<p>We've created a powerfull and extremely customizable Contact Form, all is automated and you can simply create a different form or edit one.</p>
+
+		<p>In the HTML form code you can edit/add fields as you want and then simply open the send file to edit it. Example: the sending file for the General Contact Form is /contactme/send-general-form.php</p>
+
+		<p>You have to open it and edit the $fields array. As you can see there are all the form field ORDERED as in the HTML form code, so you can simply add/edit one or more lines to make this definition equal to the HTML form code. (NOTE: for each group of Radio button you need to add only one line in the $fields array). <strong>ATTENTION:</strong> make sure to set "name" value equal to the "name" attribute of the field in the HTML form code.</p>
+
+		<p>If you need help, please contact us at <a href="mailto:info@21tools.it">info@21tools.it</a> we'll help you to creating/editing the form.</p>
+
+		<hr>
+
+		<h3 id="rateTheScript"><strong>O) Rate the script </strong> - <a href="#toc">top</a></h3>
+
+		<p>Please login to your Envato account, navigate to your "Downloads" page and rate 5 stars this script.<br />
+		The rating for us is very important, please contact us before giving a bad rating, we can help you to install or edit the script in your website. Thanks in advance!</p>
+		
+		<hr>
+
+		<p>Once again, thank you so much for purchasing this script. As We said at the beginning, We'd be glad to help you if you have any questions relating to this script. No guarantees, but we'll do our best to assist. If you have a more general question relating to the script on CodeCanyon, please don't esitate to write an email to <a href="mailto:info@21tools.it">info@21tools.it</a>.</p> 
+		
+		<p>#enjoy</p>
+
+		<p class="append-bottom alt large"><strong>21 Tools</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
