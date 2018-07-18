@@ -468,13 +468,13 @@ ul.keyboard-legend li a {
     height: 78px;
     border-radius: 37px;
     box-shadow: 2px 0 10px #9d9d9d;
-    background: #ffcc00 url(../../web/dragdrop/draggable.png) 50% 50% no-repeat;
-    background: url(../../web/dragdrop/draggable.png) 50% 50% no-repeat, -moz-linear-gradient(top, #ffcc00 0%, #ff8000 100%);
-    background: url(../../web/dragdrop/draggable.png) 50% 50% no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffcc00), color-stop(100%,#ff8000));
-    background: url(../../web/dragdrop/draggable.png) 50% 50% no-repeat, -webkit-linear-gradient(top, #ffcc00 0%,#ff8000 100%);
-    background: url(../../web/dragdrop/draggable.png) 50% 50% no-repeat, -o-linear-gradient(top, #ffcc00 0%,#ff8000 100%);
-    background: url(../../web/dragdrop/draggable.png) 50% 50% no-repeat, -ms-linear-gradient(top, #ffcc00 0%,#ff8000 100%);
-    background: url(../../web/dragdrop/draggable.png) 50% 50% no-repeat, linear-gradient(top, #ffcc00 0%,#ff8000 100%);
+    background: #ffcc00 url("https://www.lawrchen.com/web/dragdrop/draggable.png") 50% 50% no-repeat;
+    background: url("https://www.lawrchen.com/web/dragdrop/draggable.png") 50% 50% no-repeat, -moz-linear-gradient(top, #ffcc00 0%, #ff8000 100%);
+    background: url("https://www.lawrchen.com/web/dragdrop/draggable.png") 50% 50% no-repeat, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffcc00), color-stop(100%,#ff8000));
+    background: url("https://www.lawrchen.com/web/dragdrop/draggable.png") 50% 50% no-repeat, -webkit-linear-gradient(top, #ffcc00 0%,#ff8000 100%);
+    background: url("https://www.lawrchen.com/web/dragdrop/draggable.png") 50% 50% no-repeat, -o-linear-gradient(top, #ffcc00 0%,#ff8000 100%);
+    background: url("https://www.lawrchen.com/web/dragdrop/draggable.png") 50% 50% no-repeat, -ms-linear-gradient(top, #ffcc00 0%,#ff8000 100%);
+    background: url("https://www.lawrchen.com/web/dragdrop/draggable.png") 50% 50% no-repeat, linear-gradient(top, #ffcc00 0%,#ff8000 100%);
 }
 
 #draggable.hollow
